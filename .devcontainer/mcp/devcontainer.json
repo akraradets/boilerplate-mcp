@@ -1,11 +1,11 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
 {
-	"name": "myMCP",
+	"name": "boilerplate-mcp",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "mcp",
-	"workspaceFolder": "/Projects/myMCP",
+	"workspaceFolder": "/Projects/boilerplate-mcp",
 	"overrideCommand": true,
 	"runServices": [],
 	// Use this environment variable if you need to bind mount your local source code into a new container.

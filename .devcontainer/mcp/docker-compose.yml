@@ -8,13 +8,13 @@ services:
         USER_GID: 1000
         USER_UID: 1000
         BUILD_VERSION: DEV
-        WORKDIR: /Projects/myMCP
+        WORKDIR: /Projects/boilerplate-mcp
     network_mode: host
     ports:
       - 6274:6274
       - 6277:6277
     volumes:
       # Update this to wherever you want VS Code to mount the folder of your project
-      - ../..:/Projects/myMCP:cached
+      - ../..:/Projects/boilerplate-mcp:cached
       # Forwards the local Docker socket to the container.
       - /var/run/docker.sock:/var/run/docker-host.sock 
