@@ -8,6 +8,7 @@ This repository follow the tutorial [here](https://github.com/modelcontextprotoc
   - [Developing tools](#developing-tools)
     - [FastMCP](#fastmcp)
     - [MCP Inspector](#mcp-inspector)
+    - [Postman](#postman)
   - [MCP Server](#mcp-server)
     - [Stateful VS Stateless](#stateful-vs-stateless)
     - [Transport option](#transport-option)
@@ -64,6 +65,14 @@ You can spawn `MCP Inspector` using <kbd>cmd + shift + P</kbd> find, `Tasks: Run
 Then you can navigator to http://localhost:6274 to get to the `MCP Inspect` UI.
 
 You can do nothing yet, you will have to run the MCP server first.
+
+### Postman
+
+Yes, Postman also support MCP.
+The feature is locked behind the login.
+You must login first.
+
+At the day of writing this document, Postman seems to work equally with the `MCP Inspector`.
 
 ## MCP Server
 
