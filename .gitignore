@@ -10,3 +10,4 @@ wheels/
 .venv
 .python
 .mypy_cache
+node_modules
