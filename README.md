@@ -12,6 +12,8 @@ This repository follow the tutorial [here](https://github.com/modelcontextprotoc
     - [Stateful VS Stateless](#stateful-vs-stateless)
     - [Transport option](#transport-option)
     - [Running the server](#running-the-server)
+  - [MCP Client](#mcp-client)
+    - [Running the Client](#running-the-client)
 
 
 ## From Zero to Hero
@@ -105,7 +107,31 @@ Make sure to select `Transportation Type` as `Streamable HTTP` and `Connection T
 
 
 
+## MCP Client
 
+[link](https://gofastmcp.com/clients/client)
+
+Just like server situation, the client can consume server in a couple of ways.
+
+```python
+# In-memory server (ideal for testing)
+server = FastMCP("TestServer")
+client = Client(server)
+
+# HTTP server
+client = Client("https://example.com/mcp")
+
+# Local Python script
+client = Client("my_mcp_server.py")
+```
+
+In this repository, we will only focus in using client to connect with HTTP MCP server.
+
+
+### Running the Client
+
+Client is just a normal python file.
+To run it, simply use `uv run python src/client/client.py`
 
 
 
